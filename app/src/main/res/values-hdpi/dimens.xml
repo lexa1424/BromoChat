@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="splash_logo_padding">80dp</dimen>
+    <dimen name="splash_text_margin">20dp</dimen>
+
+    <dimen name="login_form_line_padding">15dp</dimen>
+    <dimen name="login_logo_margin_left_right">75dp</dimen>
+    <dimen name="login_logo_margin_top_bottom">30dp</dimen>
+    <dimen name="login_form_text_size">12sp</dimen>
+    <dimen name="login_form_text_padding">15dp</dimen>
+    <dimen name="login_checkbox_margin_top">15dp</dimen>
+    <dimen name="login_forgot_password_margin_right">20dp</dimen>
+    <dimen name="login_forgot_password_padding">5dp</dimen>
+    <dimen name="login_button_holder_margin">20dp</dimen>
+    <dimen name="login_facebook_margin_start">30dp</dimen>
+    <dimen name="login_facebook_margin_end">10dp</dimen>
+    <dimen name="login_twitter_margin_start">10dp</dimen>
+    <dimen name="login_twitter_margin_end">30dp</dimen>
+    <dimen name="login_news_margin_right">5dp</dimen>
+
+</resources>

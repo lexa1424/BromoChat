@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_background"
+    tools:context="com.example.alexey.bromochat.activity.SplashActivity"
+    tools:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_gravity="center_horizontal|bottom"
+            android:paddingTop="@dimen/splash_logo_padding"
+            android:paddingLeft="@dimen/splash_logo_padding"
+            android:paddingRight="@dimen/splash_logo_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/animation_logo"
+            android:id="@+id/animView"
+            android:layout_above="@+id/textView"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/loading_app"
+            android:textColor="@color/splash_activity_text"
+            android:textSize="8pt"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/splash_text_margin"
+            android:layout_marginTop="@dimen/splash_text_margin"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

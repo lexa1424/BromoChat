@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bromo</string>
+
+    <string name="loading_app">LOADING APP</string>
+
+    // LoginActivity
+
+    <string name="lgn_email_hint">login</string>
+    <string name="lgn_password_hint">password</string>
+    <string name="lgn_remember_me">Remember me</string>
+    <string name="lgn_forgot_password">Forgor password</string>
+    <string name="new_to_bromo">New to bromo</string>
+    <string name="create_account">Create account</string>
+    <string name="load_dialog">Loading...</string>
+
+</resources>
