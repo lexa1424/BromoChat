@@ -84,7 +84,7 @@ public class SplashActivity extends Activity implements Animation.AnimationListe
 
     @Override
     public void onAnimationEnd(Animation animation) {
-        //startLogin();
+
         if(!prefsHelper.isPrefExists(PrefsHelper.PREF_USER_EMAIL) ||
                 !prefsHelper.isPrefExists(PrefsHelper.PREF_USER_PASSWORD)) {
             startLogin();
@@ -109,12 +109,12 @@ public class SplashActivity extends Activity implements Animation.AnimationListe
     }
 
     private void startLogin() {
-        Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-        startActivity(intent);
+        LoginActivity.start(this);
+        finish();
     }
 
     private void startDialogs() {
-        Intent intent = new Intent(SplashActivity.this, DialogsActivity.class);
-        startActivity(intent);
+        DialogsActivity.start(this);
+        finish();
     }
 }

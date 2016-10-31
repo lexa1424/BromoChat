@@ -111,4 +111,8 @@ public class PrefsHelper {
         savePref(PREF_USER_PASSWORD, qbUser.getPassword());
         savePref(PREF_USER_FULL_NAME, qbUser.getFullName());
     }
+
+    public void saveFlag(Boolean value) {
+        savePref(PREF_REMEMBER_ME, value);
+    }
 }

@@ -1,6 +1,8 @@
 package com.example.alexey.bromochat.activity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,6 +31,11 @@ public class LoginActivity extends AppCompatActivity {
     ProgressBar progressBar;
     LinearLayout linearLayout;
 
+    public static void start(Context context) {
+        Intent intent = new Intent(context, LoginActivity.class);
+        context.startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,9 +60,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private void loginOnClickListener() {
 
-        //DialogFragment dialogFragment = new DialogFragment();
-        //ProgressDialog.show(this, "Authorization", "Loading");
-        //progressBar.setVisibility(ProgressBar.VISIBLE);
         linearLayout.setVisibility(View.VISIBLE);
 
         String userEmail = emailEditText.getText().toString();
@@ -67,6 +71,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onSuccess(Void aVoid, Bundle bundle) {
                 PrefsHelper.getPrefsHelper(getApplicationContext()).saveQbUser(user);
+                PrefsHelper.getPrefsHelper(getApplicationContext()).saveFlag(rememberMeCheckBox.isChecked());
                 DialogsActivity.start(LoginActivity.this);
                 finish();
             }
